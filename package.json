@@ -6,6 +6,7 @@
   "name": "frosty-project",
   "description": "",
   "version": "1.0.0",
+  "homepage": "artem-dykyi.github.io/frosty-project/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel src/index.html",
