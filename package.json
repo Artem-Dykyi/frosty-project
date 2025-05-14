@@ -1,8 +1,4 @@
 {
-  "dependencies": {
-    "gh-pages": "^6.3.0",
-    "parcel": "^2.14.4"
-  },
   "name": "frosty-project",
   "description": "",
   "version": "1.0.0",
@@ -16,5 +12,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.14.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
