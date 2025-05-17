@@ -7,7 +7,43 @@
 </head>
 <body>
     <include src="./partials/header.html"></include>
-    <h2>Storinka 2</h2>
+    <section class="container">
+        <button class="cart__btn-cart" type="button"></button>
+        <p class="cart__title">CART</p>
+        <p class="cart__delete">Delete all</p>
+        <button type="button" class="cart__delete-btn-all">X</button>
+            <div class="cart__wraper">
+                <div class="cart__product">
+                    <ul class="cart__product-list">
+                        <li class="cart__product-item">
+                            <div class="cart__img-wrap">
+                                <img src="https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2022/04/pexels-antonio-filigno-8538296-1024x657.jpg" alt="product" class="cart__product-img">
+                            </div>
+                            <div class="cart__product-box">
+                                <h2 class="cart__product-title">Avocado</h2>
+                                <div class="cart__product-wraper">
+                                    <p class="cart__product-category">Category</p>
+                                    <p class="cart__product-fresh">Fresh</p>
+                                    <p class="cart__product-category">Size</p>
+                                    <p class="cart__product-fresh">C</p>
+                                </div>
+                                <p class="cart__product-price">$4.40</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart__order">
+                    <h2 class="cart__order-title">Your Order</h2>
+                    <div class="cart__order-box">
+                        <p class="cart__order-text">Total</p>
+                        <p class="cart__order-sub-text">Sum</p>
+                        <p class="cart__order-price">$22</p>
+                    </div>
+                    <input type="email" class="cart__order-email" placeholder="Enter your email">
+                    <button type="button" class="cart__order-btn">Checkout</button>
+                </div>
+            </div>
+        </section>
 
 
 
