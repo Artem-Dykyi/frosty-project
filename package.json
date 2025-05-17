@@ -5,8 +5,8 @@
   "homepage": "https://artem-dykyi.github.io/frosty-project/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
+    "start": "npx parcel src/*.html",
+    "build": "parcel build src/*.html --no-cache --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -14,9 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "sass": "^1.89.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.1",
     "parcel": "^2.15.0",
     "posthtml-include": "^2.0.1"
   }
