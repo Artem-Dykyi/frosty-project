@@ -1,77 +1,136 @@
 .footer {
   max-height: 386px;
   width: 100%;
-  background: var(--accent-color);
-  &_title {
-    color: var(--background-fone-color);
+  background: #6D8434;
+  padding-top: 15px;
+  position: relative;
+  .footer_title {
+    color: #E8E8E2;
     font-family: "Neue Montreal";
     font-size: 40px;
     font-weight: 500;
     line-height: 0.9;
     letter-spacing: -0.8px;
+    width: 410px;
+    padding-top: 30px;
   }
-  &_text {
-    color: var(--footer-text-color);
-    font-family: "Neue Montreal";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 0.75; /* 133.333% */
+  .footer_text {
+color: rgba(232, 232, 226, 0.70);
+font-family: "Neue Montreal";
+font-size: 18px;
+
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+    width: 410px;
   }
-  &_title-box {
+  .footer_title-box {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+gap: 10px;
+  }
+
+  .footer_list{
+    display: flex;
+  }
+  .footer_subscribe-box {
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-  &_subscribe-box {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    align-items: flex-end;
+      flex-direction: column;
     gap: 8px;
+ 
   }
-  &_subscribe-title {
-    color: var(--background-fone-color);
+  .footer_subscribe-title {
+    color: #E8E8E2;
     font-family: "Neue Montreal";
     font-size: 18px;
     font-weight: 400;
     line-height: 0.75; /* 133.333% */
   }
-  &_subscribe-input {
+  .footer_subscribe-input {
     border-radius: 30px;
-    border: 1px solid var(--background-fone-color);
+    border: 1px solid #E8E8E2;
     padding: 12px 18px;
+    margin-right: 50px;
+    transition: background-color 800ms ease 0s;
   }
-  &_subscribe-button {
+  .footer_subscribe-input:hover{
+  
+    transition: background-color 1s ease 0s;
+    
+background: #a0c050;
+    
+
+  }
+  .footer_subscribe-button {
     width: 336px;
     padding: 12px 149px;
     border-radius: 30px;
-    background: var(--background-fone-color);
+    background: #E8E8E2;
+    transition: color 800ms ease 0s;
+    transition: background-color 500ms ease 0s;
+    border: 1px solid #E8E8E2;
   }
-  &_media-box {
+  .footer_subscribe-button:hover{
+    color: #455320;
+    background-color: #a0c050;
+    transition: color 800ms ease 0s;
+    transition: background-color 500ms ease 0s;
+  }
+  .footer_media-box {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     gap: 8px;
+flex-wrap: wrap;
+    width: 209px;
+position: absolute;
+top: 50px;
   }
-  &_social-media {
+  .footer_social-media {
     border-radius: 10px;
-    border: 1px solid var(--footer-icons-color);
+    border: 1px solid rgba(232, 232, 226, 0.3);
     padding: 8px;
+    width: 48px;
+
   }
-  &_logo-text {
-    color: var(--background-fone-color);
+  .footer_logo-text {
+    color: #E8E8E2;
     font-family: "FONTSPRING DEMO - Quincy CF Black";
     font-size: 24px;
     font-weight: 900;
     line-height: 24px;
     letter-spacing: -0.48px;
   }
-  &_logo-img {
-    width: 32px;
-    height: 32px;
-    fill: var(--background-fone-color);
+  .footer_logo-img {
+    width: 28px;
+height: 28px;
+   
   }
-  &_media-img {
+  .footer_media-img {
     width: 28px;
     height: 28px;
-    opacity: 0.8;
+    opacity: 0.8; 
+    fill: #E8E8E2;
+    transition: fill 500ms ease 0s;
+  }
+  .footer_media-img:hover {
+
+fill: #9aaa72e4;
+    transition: fill 500ms ease 0s;
+  }
+  .footer_copyright-box{
+    display: flex;
+gap: 720px;
+padding-top: 10px;
+  }
+  .footer_copyright-text{
+        color: #E8E8E2;
+text-align: right;
+font-family: "Neue Montreal";
+font-size: 14px;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
   }
 }
