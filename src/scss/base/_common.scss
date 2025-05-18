@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    src: url('../fonts/NeueMontreal-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
 *::selection {
     background-color: $accent-color;
     color: $background-cards-color;
@@ -9,7 +23,6 @@ html {
 
 body {
     font-family: "Neue Montreal", sans-serif;
-    font-weight: 400;
     position: relative;
     background-color: $background-fone-color;
 }
