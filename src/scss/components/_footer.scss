@@ -1,0 +1,77 @@
+.footer {
+  max-height: 386px;
+  width: 100%;
+  background: var(--accent-color);
+  &_title {
+    color: var(--background-fone-color);
+    font-family: "Neue Montreal";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -0.8px;
+  }
+  &_text {
+    color: var(--footer-text-color);
+    font-family: "Neue Montreal";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.75; /* 133.333% */
+  }
+  &_title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_subscribe-box {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 8px;
+  }
+  &_subscribe-title {
+    color: var(--background-fone-color);
+    font-family: "Neue Montreal";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.75; /* 133.333% */
+  }
+  &_subscribe-input {
+    border-radius: 30px;
+    border: 1px solid var(--background-fone-color);
+    padding: 12px 18px;
+  }
+  &_subscribe-button {
+    width: 336px;
+    padding: 12px 149px;
+    border-radius: 30px;
+    background: var(--background-fone-color);
+  }
+  &_media-box {
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+  }
+  &_social-media {
+    border-radius: 10px;
+    border: 1px solid var(--footer-icons-color);
+    padding: 8px;
+  }
+  &_logo-text {
+    color: var(--background-fone-color);
+    font-family: "FONTSPRING DEMO - Quincy CF Black";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+  }
+  &_logo-img {
+    width: 32px;
+    height: 32px;
+    fill: var(--background-fone-color);
+  }
+  &_media-img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+  }
+}
