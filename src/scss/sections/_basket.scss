@@ -1,0 +1,228 @@
+.cart__wraper-btn{
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+
+}
+
+.cart__wraper-delete{
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+    margin-left: 750px;
+
+}
+
+.cart__btn-cart{
+    width: 42px;
+    height: 42px;
+    background-color: #6D8434;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.cart__logo-icon{
+    fill: #E8E8E2;
+}
+
+.cart__delete{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+}
+
+.cart__icon-cross-all{
+    fill: #010101;
+}
+
+.cart__delete-btn-all{
+    background-color: #E8E8E2;
+}
+
+.cart-title{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.cart__wraper{
+    display: flex;
+    gap: 200px;
+
+    margin-bottom: 400px;
+    margin-left: 300px;
+}
+
+
+.cart__product-img{
+    width: 72px;
+    height: 72px;
+}
+
+.cart__product-item{
+    display: flex;
+    outline: solid red 2px;
+}
+
+.cart__product-wraper{
+    display: flex;
+    gap: 16px;
+    outline: solid greenyellow 2px;
+    margin-bottom: 44px;
+
+}
+
+.cart__product-box{
+    outline: solid blue 2px;
+    position: relative;
+}
+
+
+.cart__product-info{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cart__product-category {
+    color: rgba(1, 1, 1, 0.30);
+    font-family: "Neue Montreal";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+}
+
+.cart__product-fresh{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+
+.cart__product-title{
+    width: 340px;
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    margin-bottom: 12px;
+}
+
+.cart__delete-btn{
+    background-color: #E8E8E2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cart__icon-cross-box{
+    fill: #010101;
+
+}
+
+.cart__img-wrap{
+    outline: solid black 2px;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+
+.cart__order{
+    
+}
+
+.cart__order-title{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.cart__order-sub-text{
+    color: rgba(1, 1, 1, 0.20);
+    font-family: "Neue Montreal";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    padding-bottom: 14px;
+    margin-right: 8px;
+}
+
+
+.cart__order-box{
+    display: flex;
+    align-items: end;
+    width: 590px;
+    height: 60px;
+    border-radius: 8px;
+    background: rgba(109, 132, 52, 0.05);
+    margin-bottom: 40px;
+    // align-items: center;
+
+}
+
+.cart__order-text{
+    margin-right: 364px;
+    margin-left: 24px;
+    padding-bottom: 14px;
+
+}
+
+.cart__order-price{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 100% */
+    padding-bottom: 14px;
+}
+
+.cart__order-btn{
+    padding: 15px 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    background: #6D8434;
+
+    color: #E8E8E2;
+    font-family: "Neue Montreal";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.cart__order-email{
+    padding: 15px 172px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid rgba(1, 1, 1, 0.30);
+}
+
