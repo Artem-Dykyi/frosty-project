@@ -16,8 +16,8 @@
 }
 
 .header__logo-btn{
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
     flex-shrink: 0;
     background-color: #6D8434;
     border-radius: 50%;
@@ -25,6 +25,15 @@
     align-items: center;
     justify-content: center;
     margin-right: 8px;
+
+    @media screen and (min-width: 768px) {
+        width: 32px;
+        height: 32px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        
+    }
 }
 
 .header__logo-icon{
@@ -32,10 +41,23 @@
     
 }
 
+.header__logo-text{
+    width: 118px;
+    height: 20px;
+    @media screen and (min-width: 768px) {
+        width: 157px;
+        height: 24px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        width: 155px;
+        height: 20px;
+    }
+}
 
 
 .header__btn-home{
-    padding: 12px 28px;
+    padding: 10px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -43,14 +65,24 @@
     background: #6D8434;
 
     color: #E8E8E2;
-    // font-family: "Neue Montreal";
-    font-size: 18px;
-    // font-style: normal;
+    font-size: 14px;
     font-weight: 500;
     line-height: 24px; /* 133.333% */
 
-    margin-left: 790px;
-    margin-right: 34px;
+    margin-left: 60px;
+    margin-right: 6px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        padding: 12px 28px;
+        margin-left: 262px;
+        margin-right: 16px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        margin-left: 790px;
+        margin-right: 34px;
+    }
 }
 
 .header__btn-cart{
@@ -63,6 +95,8 @@
     border-radius: 30px;
     background: #6D8434;
     margin-right: 14px;
+
+    
 }
 
 .header__link{
@@ -78,7 +112,16 @@
     font-weight: 500;
     line-height: 24px; /* 133.333% */
     text-transform: uppercase;
-    width: 155px;
+    width: 73px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+    
+    @media screen and (min-width: 1470px) {
+      
+    }
 }
 
 // @media screen and (min-width: 734px) {
