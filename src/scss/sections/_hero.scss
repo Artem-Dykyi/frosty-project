@@ -1,18 +1,44 @@
 .hero{
-    margin-top: 77px;
+    margin-top: 72px;
     margin-bottom: 77px;
+    
+
+    @media screen and (min-width: 768px) {
+        margin-top: 116px;
+        font-size: 80px;
+        width: 658px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        margin-top: 77px;
+        width: 1042px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .hero__title{
     color: #010101;
     font-family: "Neue Montreal";
-    font-size: 80px;
+    font-size: 44px;
     font-weight: 500;
-    line-height: 80px; /* 100% */
+    line-height: 48px; /* 100% */
     letter-spacing: -1.6px;
     text-align: center;
+    width: 335px;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        line-height: 80px; /* 100% */
+        font-size: 80px;
+        width: 658px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+      width: 1042px;
+    }
 }
 
 .hero__text{
@@ -22,12 +48,23 @@
     color: rgba(1, 1, 1, 0.80);
     text-align: center;
     font-family: "Neue Montreal";
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
 
-    width: 492px;
-    margin-bottom: 40px;
+    width: 292px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        width: 492px;
+        font-size: 18px;
+        margin-bottom: 40px;
+
+
+    }
+    
+    @media screen and (min-width: 1470px) {
+    }
 }
 
 .hero__circle{
@@ -52,13 +89,22 @@
 
 .hero__photo{
     position: relative;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1240px;
+    width: 335px;
+    height: 480px;
     border-radius: 70px;
     // outline: solid red 5px;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+        
+        width: 704px;
+        height: 580px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        width: 1240px;
+        height: 350px;
+        
+    }
 }
 
