@@ -1,0 +1,106 @@
+.discount_main-title{
+color: #010101;
+font-family: "Neue Montreal";
+font-size: 28px;
+font-weight: 500;
+line-height: 0.87; 
+margin-bottom: 10px;
+text-align: center;
+@media screen and (min-width: 1470px) {
+color: #010101;
+font-family: "Neue Montreal";
+font-size: 29px;
+font-weight: 500;
+line-height: 0.87; 
+margin-bottom: 15px;
+    }
+}
+
+.discount_list{
+    display: flex;
+flex-wrap: wrap;
+align-items: сenter;
+justify-content: center;
+gap: 15px;
+
+}
+
+.discount_item{
+width: 320px;
+height: 230px;
+border-radius: 10px;
+background: #FAFAFA;
+padding-top: 10px;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+flex-direction: column;
+align-content: center;
+transition: all 500ms ease 0s;
+
+@media screen and (min-width: 1470px) {
+width: 350px;
+height: 242px;
+border-radius: 10px;
+background: #FAFAFA;
+padding-top: 10px;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+flex-direction: column;
+align-content: center;
+transition: all 500ms ease 0s;
+    }
+}
+.discount_item:hover{
+    box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+    transition: all 500ms ease 0s;
+}
+.discount_card-img{
+    width: 270px;
+height: 130px;
+border-radius: 10px;
+background: #E8E8E2;
+margin-left: 10px;
+    @media screen and (max-width: 768px) {
+         width: 230px;
+height: 130px;
+border-radius: 10px;
+background: #E8E8E2;
+margin-left: 10px;
+    }
+@media screen and (min-width: 1470px) {
+        width: 304px;
+height: 150px;
+border-radius: 10px;
+background: #E8E8E2;
+margin-left: 10px;
+}
+}
+.discount_button-svg{
+    width: 18px;
+height: 18px;
+fill: #FAFAFA;
+transition: all 500ms ease 0s;
+}
+.discount_button-svg:hover{
+    fill: #6D8434;
+    transition: all 500ms ease 0s;
+    box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+}
+.discount_button{
+    width: 25px;
+height: 25px;
+padding: 5px;
+border-radius: 30px;
+background: #6D8434;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 500ms ease 0s;
+}
+.discount_button:hover{
+    background: #E8E8E2;
+    transition: all 500ms ease 0s;
+    box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+}
