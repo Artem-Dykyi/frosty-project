@@ -1,132 +1,135 @@
-.products__list {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    gap: 20px;
+.products {
 
-    @media screen and (min-width: 734px) {
-        flex-direction: row;
-        gap: 32px;
-        flex-wrap: wrap;
-    }
+    &__list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
 
-    @media screen and (min-width: 1270px) {
-        width: 925px;
-        gap: 40px 20px;
-    }
+        @media screen and (min-width: 734px) {
+            flex-direction: row;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
 
-}
-
-.products__item {
-    padding: 20px;
-    background-color: $background-cards-color;
-    border-radius: 20px;
-
-    @media screen and (min-width: 734px) {
-        width: 336px;
-    }
-
-    @media screen and (min-width: 1270px) {
-        width: 295px;
-    }
-}
-
-.products__content {
-    border-radius: 10px;
-    width: 100%;
-    height: 178px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $background-fone-color;
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 734px) {
-        width: 296px;
-    }
-
-    @media screen and (min-width: 1270px) {
-        width: 255px;
-    }
-}
-
-.products__photo {
-    width: 140px;
-    height: 140px;
-}
-
-.products__name {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.11;
-    color: $title-color;
-
-    @media screen and (min-width: 734px) {
-        font-size: 20px;
-        line-height: 1.2;
+        @media screen and (min-width: 1270px) {
+            width: 925px;
+            gap: 40px 20px;
+        }
 
     }
-}
 
-.products__datas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px 8px;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    &__item {
+        padding: 20px;
+        background-color: $background-cards-color;
+        border-radius: 20px;
 
-    @media screen and (min-width: 1270px) {
+        @media screen and (min-width: 734px) {
+            width: 336px;
+        }
+
+        @media screen and (min-width: 1270px) {
+            width: 295px;
+        }
+    }
+
+    &__content {
+        border-radius: 10px;
+        width: 100%;
+        height: 178px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-fone-color;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 734px) {
+            width: 296px;
+        }
+
+        @media screen and (min-width: 1270px) {
+            width: 255px;
+        }
     }
-}
 
-.products__data {
-    display: flex;
-    gap: 4px;
-}
-
-.products__catag {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    color: $general-text-color;
-}
-
-.products__info {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    color: $title-color;
-}
-
-.products__down {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.products__cost {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.11;
-    color: $title-color;
-
-    @media screen and (min-width: 734px) {
-        font-size: 20px;
-        line-height: 1.2;
+    &__photo {
+        width: 140px;
+        height: 140px;
     }
-}
 
-.products__btn {
-    background-color: $accent-color;
-    width: 32px;
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
+    &__name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.11;
+        color: $title-color;
 
-.products__icon {
-    fill: $background-fone-color;
+        @media screen and (min-width: 734px) {
+            font-size: 20px;
+            line-height: 1.2;
+
+        }
+    }
+
+    &__datas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px 8px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+
+        @media screen and (min-width: 1270px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__data {
+        display: flex;
+        gap: 4px;
+    }
+
+    &__catag {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        color: $general-text-color;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        color: $title-color;
+    }
+
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    &__cost {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.11;
+        color: $title-color;
+
+        @media screen and (min-width: 734px) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    &__btn {
+        background-color: $accent-color;
+        width: 32px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    &__icon {
+        fill: $background-fone-color;
+    }
 }
