@@ -1,0 +1,108 @@
+.pagination {
+
+    &__cont {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+
+        @media screen and (min-width: 734px) {
+            gap: 32px;
+        }
+    }
+
+
+    &__lefts {
+        display: flex;
+        gap: 4px;
+
+        @media screen and (min-width: 734px) {
+            gap: 8px;
+        }
+    }
+
+    &__left {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &__arrow--left {
+        transform: rotate(180deg);
+        stroke-width: 1.50px;
+        stroke: $pagination-unuseble-color;
+        fill: none;
+    }
+
+    &__centers {
+        display: flex;
+        gap: 4px;
+
+        @media screen and (min-width: 734px) {
+            gap: 8px;
+        }
+    }
+
+    &__center {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+
+        &--active {
+            border-radius: 50%;
+            background-color: $accent-color;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: none;
+
+            @media screen and (min-width: 734px) {
+                display: flex;
+            }
+        }
+    }
+
+    &__number {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.43;
+        color: $pagination-color;
+
+        &--active {
+            color: $background-fone-color;
+        }
+    }
+
+    &__rights {
+        display: flex;
+        gap: 4px;
+
+        @media screen and (min-width: 734px) {
+            gap: 8px;
+        }
+    }
+
+
+    &__right {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &__arrow--right {
+        stroke-width: 1.50px;
+        stroke: $pagination-color;
+        fill: none;
+    }
+}
