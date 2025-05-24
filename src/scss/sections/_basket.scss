@@ -218,6 +218,30 @@
 }
 
 
+.cart__product-add-wrap{
+    display: flex;
+}
+
+.cart__product-plus{
+    display: flex;
+    background-color: darkorange;
+}
+
+.cart__icon-minus{
+    fill: #010101;
+}
+
+.cart__icon-plus{
+    fill: #010101;
+}
+
+.cart__product-plus-text{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px; 
+}
 
 .cart__order-title{
     color: #010101;
