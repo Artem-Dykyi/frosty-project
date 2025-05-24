@@ -5,6 +5,10 @@
     fill: black;
     align-self: flex-end;
     background: none;
+    &:hover {
+        fill: #6D8434;
+        transition: 250ms ease-in-out;
+    }
 
 }
 .already-sub__modal {
@@ -34,6 +38,12 @@
     align-items: center;
     height: 308px;
     gap: 60px;
+    @media screen and (max-width: 768px) {
+            width: 335px;
+            height: 276px;
+            gap: 40px;
+        
+    }
 }
 .already-sub__title {
     font-weight: 500;
