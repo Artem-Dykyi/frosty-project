@@ -7,8 +7,26 @@
 .cart__wraper-delete{
     display: flex;
     align-items: center;
-    margin-left: 404px;
+    margin-left: 230px;
 
+    @media screen and (min-width: 768px) {
+    margin-left: 404px;
+        
+    }
+}
+
+.cart__delete{
+    color: #010101;
+    font-family: "Neue Montreal";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+            
+    }
 }
 
 .cart__btn-cart{
@@ -118,9 +136,6 @@
 
     @media screen and (min-width: 768px) {
     margin-bottom: 44px;
-        
-
-        
     }
 
 }
@@ -128,6 +143,11 @@
 .cart__product-box{
     outline: solid blue 2px;
     position: relative;
+    width: 208px;
+
+    @media screen and (min-width: 768px) {
+        width: 340px;
+    }
 }
 
 
@@ -220,11 +240,27 @@
 
 .cart__product-add-wrap{
     display: flex;
+
 }
 
 .cart__product-plus{
     display: flex;
     background-color: darkorange;
+    justify-content: center;
+    width: 96px;
+
+    gap: 6px;
+    border-radius: 100px;
+    border: 1px solid rgba(1, 1, 1, 0.10);
+    overflow: hidden;
+
+    margin-left: 88px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 197px; 
+        gap: 10px;
+
+    }
 }
 
 .cart__icon-minus{
@@ -238,9 +274,13 @@
 .cart__product-plus-text{
     color: #010101;
     font-family: "Neue Montreal";
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 24px; 
+    line-height: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .cart__order-title{
@@ -367,22 +407,34 @@
 
 .cart__modal{
     position: relative;
-    width: 560px;
-    height: 509px;
+    width: 335px;
+    height: 428px;
     flex-shrink: 0;
+
     border-radius: 20px;
     background: #E8E8E2;
     margin-left: auto;
     margin-right: auto;
     margin-top: 240px;
+
+    @media screen and (min-width: 768px) {
+        width: 560px;
+        height: 509px;
+    }
 }
 
 .cart__modal-close{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 14px;
+    right: 14px;
     background-color: forestgreen;
+
+    @media screen and (min-width: 768px) {
+        top: 29px;
+    right: 29px;
+    }
 }
+
 
 .cart__modal-photo{
     width: 140px;
@@ -399,6 +451,9 @@
 
 .cart__modal-photo-wrap{
     padding-top: 40px;
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
 }
 
 .cart__modal-title{
@@ -407,11 +462,17 @@
     text-align: center;
     // margin-top: 40px;
     padding-top: 40px;
-    font-size: 32px;
+    margin-bottom: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px; /* 100% */
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+    font-size: 32px;
+        
+    }
 }
 
 .cart__modal-text{
@@ -421,12 +482,19 @@
     margin-left: auto;
     margin-right: auto;
     font-family: "Neue Montreal";
-    font-size: 18px;
+    font-size: 14x;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 133.333% */
-    width: 480px;
+    line-height: 18px; 
+    // width: 295px;
     margin-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        width: 480px;
+        line-height: 24px; 
+
+    }
 }
 
 .hidden{
