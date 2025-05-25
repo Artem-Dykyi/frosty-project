@@ -4,80 +4,184 @@
   background: #6D8434;
   padding-top: 15px;
   position: relative;
+ 
   .footer_title {
+font-size: 40px;
+line-height: 0.9;
+ width: 429px;
     color: #E8E8E2;
     font-family: "Neue Montreal";
     font-size: 40px;
     font-weight: 500;
     line-height: 0.9;
     letter-spacing: -0.8px;
+        @media screen and (max-width: 768px) {
+color: #E8E8E2;
+font-family: "Neue Montreal";
+font-size: 24px;
+font-weight: 500;
+line-height: 0.85; 
+letter-spacing: -0.48px;
+width: 335px;
+    }
+@media screen and (min-width: 1470px) {
+           color: #E8E8E2;
+    font-family: "Neue Montreal";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: -0.8px;
     width: 410px;
-    padding-top: 30px;
+   
+    }
   }
+
   .footer_text {
 color: rgba(232, 232, 226, 0.70);
 font-family: "Neue Montreal";
-font-size: 18px;
-
+font-size: 14px;
 font-weight: 400;
-line-height: 24px; /* 133.333% */
+line-height: 0.77; 
+        @media screen and (min-width: 768px) {
+color: rgba(232, 232, 226, 0.70);
+font-family: "Neue Montreal";
+font-size: 18px;
+font-weight: 400;
+line-height: 0.75; 
     width: 410px;
+    }
   }
   .footer_title-box {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 100px;
+ @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10px;
+    }
+@media screen and (min-width: 1470px) {
+   display: flex;
 
     align-items: center;
     flex-direction: column;
 gap: 10px;
+    }
   }
-
   .footer_list{
     display: flex;
   }
   .footer_subscribe-box {
-    display: flex;
+  display: flex;
     justify-content: center;
     align-items: flex-end;
       flex-direction: column;
     gap: 8px;
- 
+    padding-top: 25px;
+     @media screen and (min-width: 768px) {
+ display: flex;
+    justify-content: center;
+    align-items: flex-end;
+      flex-direction: column;
+    gap: 8px;
+    padding-right: 70px;
+    padding-top: 25px;
+    }
+ @media screen and (min-width: 1470px) {
+   display: flex;
+    justify-content: center;
+    align-items: flex-end;
+      flex-direction: column;
+    gap: 8px;
+    }
   }
   .footer_subscribe-title {
-    color: #E8E8E2;
+  color: #E8E8E2;
+font-family: "Neue Montreal";
+font-size: 18px;
+font-weight: 400;
+line-height: 0.75; 
+
+ @media screen and (min-width: 768px) {
+  color: #E8E8E2;
+font-family: "Neue Montreal";
+font-size: 18px;
+font-weight: 400;
+line-height: 0.75; 
+    }
+    @media screen and (min-width: 1470px) {
+  color: #E8E8E2;
     font-family: "Neue Montreal";
     font-size: 18px;
     font-weight: 400;
-    line-height: 0.75; /* 133.333% */
+    line-height: 0.75; 
+    }
   }
   .footer_subscribe-input {
-    border-radius: 30px;
+padding: 12px 100px 12px 10px;
+border: 1px solid #E8E8E2;
+transition: all 800ms ease 0s;
+border-radius: 30px;
+ @media screen and (min-width: 768px) {
+padding: 12px 140px 12px 10px;
+border: 1px solid #E8E8E2;
+transition: all 800ms ease 0s;
+border-radius: 30px;
+    }
+    @media screen and (min-width: 1470px) {
+   border-radius: 30px;
     border: 1px solid #E8E8E2;
     padding: 12px 18px;
     margin-right: 50px;
-    transition: background-color 800ms ease 0s;
+    transition: all 800ms ease 0s;
+    }
   }
   .footer_subscribe-input:hover{
   
-    transition: background-color 1s ease 0s;
-    
+    transition: all 1s ease 0s;
+      box-shadow: 2px 4px 20px -2px rgba(0,0,0,0.75);
 background: #a0c050;
     
 
   }
   .footer_subscribe-button {
-    width: 336px;
+ display: flex;
+padding: 12px 128px;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+transition: all 500ms ease 0s;
+gap: 8px;
+ @media screen and (min-width: 768px) {
+ display: flex;
+width: 336px;
+padding: 12px 149px;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+transition: all 500ms ease 0s;
+gap: 8px;
+    }
+    @media screen and (min-width: 1470px) {
+   width: 336px;
     padding: 12px 149px;
     border-radius: 30px;
     background: #E8E8E2;
     transition: color 800ms ease 0s;
-    transition: background-color 500ms ease 0s;
+    transition: all 500ms ease 0s;
     border: 1px solid #E8E8E2;
+    }
   }
   .footer_subscribe-button:hover{
     color: #455320;
     background-color: #a0c050;
     transition: color 800ms ease 0s;
-    transition: background-color 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    box-shadow: 2px 4px 20px -2px rgba(0,0,0,0.75);
   }
   .footer_media-box {
     display: flex;
@@ -86,7 +190,17 @@ background: #a0c050;
 flex-wrap: wrap;
     width: 209px;
 position: absolute;
-top: 50px;
+top: 10px;
+padding-left: 30px;
+ @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+flex-wrap: wrap;
+    width: 209px;
+position: absolute;
+top: 0px;
+    }
   }
   .footer_social-media {
     border-radius: 10px;
@@ -122,8 +236,13 @@ fill: #9aaa72e4;
   }
   .footer_copyright-box{
     display: flex;
-gap: 720px;
+gap: 300px;
+padding-top: 20px;
+@media screen and (min-width: 1470px) {
+    display: flex;
+gap: 820px;
 padding-top: 10px;
+    }
   }
   .footer_copyright-text{
         color: #E8E8E2;

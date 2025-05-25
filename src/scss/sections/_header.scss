@@ -85,6 +85,10 @@
     }
 }
 
+.header__link-home{
+    color: #E8E8E2;
+}
+
 .header__btn-cart{
     width: 38px;
     height: 38px;
@@ -94,9 +98,17 @@
     // padding: 10px;
     border-radius: 30px;
     background: #6D8434;
-    margin-right: 14px;
 
-    
+    @media screen and (min-width: 768px) {
+    margin-right: 14px;
+        
+    }
+}
+
+.header__btn-link{
+    display: flex;
+
+    align-items: center;
 }
 
 .header__link{
