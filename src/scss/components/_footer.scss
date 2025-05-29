@@ -1,10 +1,16 @@
 .footer {
-  max-height: 386px;
+  height: 415px;
   width: 100%;
   background: #6D8434;
   padding-top: 15px;
   position: relative;
- 
+ @media screen and (min-width: 1470px) {
+  height: 410px;
+  width: 100%;
+  background: #6D8434;
+  padding-top: 15px;
+  position: relative;
+}
   .footer_title {
 font-size: 40px;
 line-height: 0.9;
@@ -38,13 +44,13 @@ width: 335px;
 
   .footer_text {
 color: rgba(232, 232, 226, 0.70);
-font-family: "Neue Montreal";
+font-family: Neue Montreal;
 font-size: 14px;
 font-weight: 400;
 line-height: 0.77; 
         @media screen and (min-width: 768px) {
 color: rgba(232, 232, 226, 0.70);
-font-family: "Neue Montreal";
+font-family: Neue Montreal;
 font-size: 18px;
 font-weight: 400;
 line-height: 0.75; 
@@ -236,7 +242,7 @@ fill: #9aaa72e4;
   }
   .footer_copyright-box{
     display: flex;
-gap: 300px;
+gap: 250px;
 padding-top: 20px;
 @media screen and (min-width: 1470px) {
     display: flex;
@@ -250,6 +256,15 @@ text-align: right;
 font-family: "Neue Montreal";
 font-size: 14px;
 font-weight: 400;
-line-height: 18px; /* 128.571% */
+line-height: 0.77; 
   }
+}
+.footer_logo-img{
+    width: 20px;
+    height: 20px;
+    fill: #6D8434;
+    background-color: #E8E8E2;
+    border-radius: 50%;
+    padding: 4px;
+    margin-top: 10px;
 }
