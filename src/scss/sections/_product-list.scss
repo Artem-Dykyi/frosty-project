@@ -57,6 +57,17 @@
         height: 140px;
     }
 
+    &__text {
+
+        @media screen and (min-width: 1270px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 125px;
+        }
+    }
+
+
     &__name {
         font-weight: 500;
         font-size: 18px;
