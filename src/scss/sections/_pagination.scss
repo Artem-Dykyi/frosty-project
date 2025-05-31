@@ -29,13 +29,19 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
+        cursor: pointer;
     }
 
     &__arrow--left {
         transform: rotate(180deg);
         stroke-width: 1.50px;
-        stroke: $pagination-unuseble-color;
         fill: none;
+        stroke: $pagination-color;
+    }
+    &__arrow--disabled {
+        & svg{
+            stroke: $pagination-unuseble-color;
+        }
     }
 
     &__centers {
@@ -53,6 +59,9 @@
         height: 40px;
         justify-content: center;
         align-items: center;
+        &:not(:last-child) {
+            cursor: pointer;
+        }
 
         &--active {
             border-radius: 50%;
@@ -98,6 +107,7 @@
         align-items: center;
         background-color: #fff;
         border-radius: 50%;
+        cursor: pointer;
     }
 
     &__arrow--right {

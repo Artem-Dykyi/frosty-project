@@ -2,23 +2,23 @@
   <div class="container">
     <div class="pagination__cont">
       <ul class="pagination__lefts">
-        <li class="pagination__left">
-          <svg class="pagination__arrow--left" width="24" height="24">
+        <li class="pagination__left pagination__arrow--disabled" id="pagination__left--two">
+          <svg class="pagination__arrow--left " width="24" height="24">
             <use href="./images/icon.svg#two-arrow"></use>
           </svg>
         </li>
-        <li class="pagination__left">
-          <svg class="pagination__arrow--left" width="24" height="24">
+        <li class="pagination__left pagination__arrow--disabled" id="pagination__left">
+          <svg class="pagination__arrow--left " width="24" height="24">
             <use href="./images/icon.svg#one-arrow"></use>
           </svg>
         </li>
       </ul>
       <ul class="pagination__centers">
-        <li class="pagination__center">
-          <p class="pagination__number">1</p>
-        </li>
         <li class="pagination__center pagination__center--active">
-          <p class="pagination__number pagination__number--active">2</p>
+          <p class="pagination__number pagination__number--active">1</p>
+        </li>
+        <li class="pagination__center ">
+          <p class="pagination__number ">2</p>
         </li>
         <li class="pagination__center">
           <p class="pagination__number">3</p>
@@ -32,12 +32,12 @@
       </ul>
 
       <ul class="pagination__rights">
-        <li class="pagination__right">
+        <li class="pagination__right" id="pagination__right">
           <svg class="pagination__arrow--right" width="24" height="24">
             <use href="./images/icon.svg#one-arrow"></use>
           </svg>
         </li>
-        <li class="pagination__right">
+        <li class="pagination__right" id="pagination__right--two">
           <svg class="pagination__arrow--right" width="24" height="24">
             <use href="./images/icon.svg#two-arrow"></use>
           </svg>
