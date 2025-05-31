@@ -8,7 +8,8 @@
     "start": "npx parcel src/*.html",
     "build": "parcel build src/*.html --no-cache --public-url ./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "npx json-server products.json"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +17,26 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "parcel-reporter-clean-dist": "^1.0.4",
-    "sass": "^1.89.0"
+    "sass": "^1.89.0",
+    "server": "^1.0.41"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.1",
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
     "parcel": "^2.15.0",
-    "posthtml-include": "^2.0.1"
+    "path-browserify": "^1.0.1",
+    "posthtml-include": "^2.0.1",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.4",
+    "util": "^0.12.5"
   }
 }
