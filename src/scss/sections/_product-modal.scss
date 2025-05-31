@@ -6,6 +6,7 @@
     left: 0;
     background: $backdrop-color;
     z-index: 4;
+    display: none;
 }
 
 .is-hidden {
@@ -19,6 +20,7 @@
 }
 
 .modal-products {
+    display: none;
     width: calc(100% - 40px);
     max-width: 335px;
     background-color: $background-cards-color;
@@ -179,7 +181,5 @@
 
     &__cross {
         fill: $title-color;
-        stroke-width: 10px;
-        stroke: aqua;
     }
 }
