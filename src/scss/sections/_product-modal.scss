@@ -6,7 +6,6 @@
     left: 0;
     background: $backdrop-color;
     z-index: 4;
-    display: none;
 }
 
 .is-hidden {
@@ -20,7 +19,6 @@
 }
 
 .modal-products {
-    display: none;
     width: calc(100% - 40px);
     max-width: 335px;
     background-color: $background-cards-color;
@@ -123,6 +121,8 @@
         font-size: 14px;
         line-height: 1.29;
         color: $text-desc-color;
+        height: 124px;
+        overflow: auto;
 
         @media screen and (min-width: 734px) {
             font-size: 16px;

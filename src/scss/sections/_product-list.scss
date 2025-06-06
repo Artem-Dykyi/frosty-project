@@ -138,9 +138,29 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+
+        &--checked {
+            background-color: $background-fone-color;
+        }
     }
+
 
     &__icon {
         fill: $background-fone-color;
+        display: block;
+    }
+
+    &__icon-2 {
+        stroke: $accent-color;
+        fill: none;
+        display: none;
+    }
+
+    &__btn--checked &__icon {
+        display: none;
+    }
+
+    &__btn--checked &__icon-2 {
+        display: block;
     }
 }
