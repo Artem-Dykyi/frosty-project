@@ -3,6 +3,8 @@
 @import "./base/container";
 @import "./base/reset";
 
+@import "./sections/basket";
+
 @import "./sections/header";
 @import "./components/footer";
 
@@ -14,7 +16,9 @@
 @import "./sections/discount-product";
 
 @import "./sections/allready-sub";
-@import "./sections/product-modal"
+@import "./sections/product-modal";
+@import "./sections/basket-modal"
 
-@import "./sections/basket";
+
+
 
