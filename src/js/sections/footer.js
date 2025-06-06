@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = await response.json();
 
       if (response.ok) {
-        console.log("Success:", result);
         emailInput.value = "";
         successModal.classList.remove("hidden");
       } else {
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         errorModal.classList.remove("hidden");
       }
     } catch (error) {
-      console.log("Network error:", error);
+      console.log("error:", error);
       errorModal.classList.remove("hidden");
     }
   });
