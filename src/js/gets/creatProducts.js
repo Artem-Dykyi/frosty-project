@@ -1,6 +1,6 @@
 export const creatProducts = (products) => 
 products.map((product)=> 
-`<li class="cart__product-item" id="${product._id}">
+    `<li class="cart__product-item" id="${product._id}">
                         <div class="cart__img-wrap">
                             <img src="${product.img}" alt="product" class="cart__product-img">
                         </div>
@@ -8,7 +8,7 @@ products.map((product)=>
                             <h2 class="cart__product-title">${product.name}</h2>
                             <button type="button" class="cart__delete-btn" data-id="${product._id}">
                                 <svg class="cart__icon-cross-box" width="20" height="20">
-                                    <use href="./images/icon.svg#cross"></use>
+                                    <use href="#cross"></use>
                                 </svg>
                             </button>
                             <ul class="cart__product-wraper">
@@ -26,13 +26,13 @@ products.map((product)=>
                                 <div class="cart__product-plus">
                                     <button type="button" class="cart__btn-minus">
                                         <svg class="cart__icon-minus" width="20" height="20">
-                                            <use href="./images/icon.svg#minus"></use>
+                                            <use href="#minus"></use>
                                         </svg>
                                     </button>
                                     <p class="cart__product-plus-text">1</p>
                                     <button type="button" class="cart__btn-plus">
                                         <svg class="cart__icon-plus" width="20" height="20">
-                                            <use href="./images/icon.svg#cross"></use>
+                                            <use href="#cross"></use>
                                         </svg>
                                     </button>
                                 </div>

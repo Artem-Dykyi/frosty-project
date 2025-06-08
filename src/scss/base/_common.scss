@@ -26,6 +26,16 @@ body {
     position: relative;
     background-color: $background-fone-color;
 }
-.hidden{
+
+.hidden {
     display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.mainwrapper {
+    display: flex;
+    gap: 40px;
 }
