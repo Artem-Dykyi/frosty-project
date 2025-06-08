@@ -1,6 +1,5 @@
 import { creatProducts } from "../gets/creatProducts"
 import { getproducts } from "../gets/getProducts"
-import { deleteProducts } from "../gets/deleteProducts"
 import { getFromLocalStorage, setToLocalStorage } from "../additional/localstorage-functions";
 
 
@@ -214,17 +213,16 @@ document.addEventListener("click", (event) => {
     }
   });
 
-// cartDeleteBtnAll.addEventListener("click", () => {
-//     document.querySelector(".cart__product-list").innerHTML = "";
-//     localStorage.removeItem("productsBasket");
+cartDeleteBtnAll.addEventListener("click", () => {
+    document.querySelector(".cart__product-list").innerHTML = "";
+    localStorage.removeItem("productsBasket");
   
-//     cartOrder.classList.add("hidden");
-//     cartWrapperDelete.classList.remove("hidden");
-//     cartEmoty.classList.remove("hidden");
-//     cartDeleteBtnAll.classList.add("hidden");
+    cartOrder.classList.add("hidden");
+    cartWrapperDelete.classList.add("hidden");
+    cartEmoty.classList.remove("hidden");
   
-//     updeteCartProd();
-//   });
+    updeteCartProd();
+  });
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     const isCartEmpty = localStorage.getItem("cartEmoty");
