@@ -1,6 +1,5 @@
 .popular_products{
     margin-bottom: 15px;
-margin-top: 20px;
 }
 
 .popular_main-title{
@@ -11,15 +10,14 @@ font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 10px;
 text-align: center;
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
 color: #010101;
 font-family: "Neue Montreal";
 font-size: 29px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 15px;
-padding-right: 20px;
-text-align: right;
+text-align: left;
     }
 }
 .popular_list{
@@ -29,27 +27,27 @@ justify-content: center;
 gap: 15px;
 flex-wrap: wrap;
 align-items: center;
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
     display: flex;
 align-items: сenter;
 justify-content: center;
 gap: 15px;
 flex-direction: column;
-align-items: flex-end;
+
     }
 }
 .popular_item{
-width: 285px;
-height: 105px;
+width: 275px;
+height: 98px;
 border-radius: 10px;
 background: #FAFAFA;
-padding-top: 10px;
+padding-top: 5px;
 padding-left: 10px;
-padding-right: 10px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 transition: all 500ms ease 0s;
+gap: 1px;
 }
 .popular_item:hover{
     box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
@@ -62,14 +60,18 @@ border-radius: 10px;
 background: #E8E8E2;
 padding: 5px 5px 5px 5px;
 }
-
+.button-box{
+    display: flex;  
+    justify-content: flex-end;
+    padding-right: 20px;
+}
 .popular_button{
-padding: 4px;
-width: 24px;
-height: 24px;
+padding: 0;
+width: 17px;
+height: 18px;
 background-color: #E8E8E2;
 border-radius: 20px;
-margin-left: 5px;
+margin-left: 20px;
  transition: all 500ms ease 0s;
 }
 .popular_button:hover{
@@ -92,21 +94,22 @@ box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
     color: #010101;
 font-family: "Neue Montreal";
 font-size: 14px;
-font-weight: 600;
+font-weight: 500;
 line-height: 0.85; 
 padding-top: 2px;
+margin-left: 5px;
+    margin-bottom: 2px;
 }
-#popularCardText{
-    color: rgba(1, 1, 1, 0.30);
-font-family: "Neue Montreal";
-font-size: 12px;
-font-weight: 400;
-line-height: 0.85;
+.popularCardText{
+    color: #0101014d;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
 }
 .popular_card-outline{
     color: #010101;
 font-family: "Neue Montreal";
 font-size: 12px;
 font-weight: 400;
-line-height: 0.85; 
+line-height: 1.17;
 }

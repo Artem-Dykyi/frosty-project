@@ -32,3 +32,13 @@ body {
 .no-scroll {
     overflow: hidden;
 }
+
+.mainwrapper {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1470px) {
+flex-wrap: nowrap;
+    
+}
+}

@@ -23,7 +23,7 @@ fetch(API_URL)
         <p class="discount_card-text">$${product.price}</p>
         <button class="discount_button">
           <svg class="discount_button-svg">
-            <use href="./images/icon.svg#basket"></use>
+            <use href="#basket"></use>
           </svg>
         </button>
       `;
