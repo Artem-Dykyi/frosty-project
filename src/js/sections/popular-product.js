@@ -19,17 +19,21 @@ fetch(API_URL)
       li.innerHTML = `
 
       
-        <img src="${product.img}" alt="${product.name}" class="popular_card-img">
-        <h3 class="popular_card-title">${product.name}</h3>
+       
+       
+      <h3 class="popular_card-title">${product.name}</h3>
+       <img src="${product.img}" alt="${product.name}" class="popular_card-img">
+      <div class="button-box">       
+        <button class="popular_button">
+          <svg class="popular_button-svg">
+            <use href="#basket"></use>
+          </svg>
+        </button>
+        </div>
         <p class="popularCardText">Category: <span class="popular_card-outline">${product.category}</span></p>
         <p class="popularCardText">Size: <span class="popular_card-outline">${product.size}</span></p>
         <p class="popularCardText">Popularity: <span class="popular_card-outline">${product.popularity}</span></p>
-        <p class="discountCardPrice">Price: <span class="popular_card-outline">$${product.price}</span></p>
-        <button class="popular_button">
-          <svg class="popular_button-svg">
-            <use href="./images/icon.svg#basket"></use>
-          </svg>
-        </button>
+
         
       `;
 

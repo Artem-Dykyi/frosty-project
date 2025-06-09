@@ -1,3 +1,6 @@
+
+
+
 .discount_main-title{
 color: #010101;
 font-family: "Neue Montreal";
@@ -6,14 +9,14 @@ font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 10px;
 text-align: center;
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
 color: #010101;
 font-family: "Neue Montreal";
 font-size: 29px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 15px;
-text-align: right;
+text-align: left;
 padding-right: 20px;
     }
 }
@@ -24,7 +27,7 @@ justify-content: center;
 gap: 15px;
 flex-wrap: wrap;
 align-items: center;
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
     display: flex;
 justify-content: center;
 gap: 15px;
@@ -35,7 +38,7 @@ align-items: flex-end;
 
 .discount_item{
 width: 320px;
-height: 240px;
+height: 250px;
 border-radius: 10px;
 background: #FAFAFA;
 padding-top: 20px;
@@ -45,7 +48,7 @@ gap: 5px;
 flex-direction: column;
 transition: all 500ms ease 0s;
 
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
 width: 295px;
 height: 232px;
 border-radius: 10px;
@@ -63,32 +66,36 @@ transition: all 500ms ease 0s;
     box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
     transition: all 500ms ease 0s;
 }
+
 .discount_card-title{
-
+        color: #010101;
+font-family: "Neue Montreal";
+font-size: 18px;
+font-weight: 500;
+line-height: 0.85; 
 }
-
 .discount_card-img{
     width: 270px;
 height: 130px;
 border-radius: 10px;
 background: #E8E8E2;
 margin-left: 10px;
- padding: 15px 25px 15px 25px;
-    @media screen and (max-width: 768px) {
+ padding: 16px 74px;
+    @media screen and (min-width: 768px) {
          width: 270px;
-height: 130px;
+height: 140px;
 border-radius: 10px;
 background: #E8E8E2;
-
+ padding: 15px 53px;
     }
-@media screen and (min-width: 1470px) {
+@media screen and (min-width: 1270px) {
 width: 230px;
 height: 150px;
 border-radius: 10px;
 background: #E8E8E2;
 margin-left: 10px;
     object-fit: fill;
-    padding: 15px 20px 15px 20px;
+    padding: 30px 50px;
     
 }
 }
@@ -113,7 +120,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 500ms ease 0s;
-    @media screen and (min-width: 1470px) {
+    @media screen and (min-width: 1270px) {
             width: 25px;
 height: 25px;
 padding: 5px;

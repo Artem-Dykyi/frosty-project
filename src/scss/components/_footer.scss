@@ -1,11 +1,11 @@
 .footer {
-  height: 415px;
+  height: 100%;
   width: 100%;
   background: #6D8434;
   padding-top: 15px;
   position: relative;
  @media screen and (min-width: 1470px) {
-  height: 410px;
+  height: 100%;
   width: 100%;
   background: #6D8434;
   padding-top: 15px;
@@ -21,6 +21,7 @@ line-height: 0.9;
     font-weight: 500;
     line-height: 0.9;
     letter-spacing: -0.8px;
+    margin-left: 10px;
         @media screen and (max-width: 768px) {
 color: #E8E8E2;
 font-family: "Neue Montreal";
@@ -38,7 +39,7 @@ width: 335px;
     line-height: 0.9;
     letter-spacing: -0.8px;
     width: 410px;
-   
+   margin-left: 0;
     }
   }
 
@@ -69,12 +70,13 @@ line-height: 0.75;
     align-items: flex-end;
     flex-direction: column;
     gap: 10px;
+     padding-top: 0;
     }
 @media screen and (min-width: 1470px) {
    display: flex;
-
-    align-items: center;
-    flex-direction: column;
+        padding-top: 10px;
+justify-content: flex-end;
+flex-direction: row;
 gap: 10px;
     }
   }
@@ -125,6 +127,7 @@ line-height: 0.75;
     font-size: 18px;
     font-weight: 400;
     line-height: 0.75; 
+    padding-right: 11px;
     }
   }
   .footer_subscribe-input {
@@ -141,8 +144,7 @@ border-radius: 30px;
     @media screen and (min-width: 1470px) {
    border-radius: 30px;
     border: 1px solid #E8E8E2;
-    padding: 12px 18px;
-    margin-right: 50px;
+    padding:  12px 140px 12px 10px;
     transition: all 800ms ease 0s;
     }
   }
@@ -205,7 +207,7 @@ padding-left: 30px;
 flex-wrap: wrap;
     width: 209px;
 position: absolute;
-top: 0px;
+top: 15px;
     }
   }
   .footer_social-media {
@@ -242,12 +244,17 @@ fill: #9aaa72e4;
   }
   .footer_copyright-box{
     display: flex;
-gap: 250px;
+gap: 120px;
 padding-top: 20px;
+padding-bottom: 10px;
+
+@media screen and (min-width: 768px) {
+gap: 300px;
+    }
 @media screen and (min-width: 1470px) {
     display: flex;
 gap: 820px;
-padding-top: 10px;
+padding-top: 80px;
     }
   }
   .footer_copyright-text{

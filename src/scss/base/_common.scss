@@ -37,10 +37,9 @@ body {
 
 .mainwrapper {
     display: flex;
-    gap: 40px;
-    flex-direction: column;
-
+    gap: 5px;
+    flex-wrap: wrap;
     @media screen and (min-width: 1470px) {
-        flex-direction: row;
-    }
+flex-wrap: nowrap;
+    
 }
