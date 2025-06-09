@@ -35,7 +35,7 @@ pagLeftTwo.addEventListener('click', () => {
 });
 
 async function showPage(api, currentPage) {
-  const response = await fetch(`${api}?page=${currentPage}&limit=6`);
+  const response = await fetch(`${api}?page=${currentPage}&limit=9`);
   const data = await response.json();
   console.log(data); 
   totalPages = data.totalPages;

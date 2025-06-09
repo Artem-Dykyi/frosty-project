@@ -26,9 +26,11 @@ body {
     position: relative;
     background-color: $background-fone-color;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
 .no-scroll {
     overflow: hidden;
 }
@@ -40,5 +42,4 @@ body {
     @media screen and (min-width: 1470px) {
 flex-wrap: nowrap;
     
-}
 }
