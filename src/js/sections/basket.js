@@ -92,7 +92,8 @@ renderCart()
     const cartDeleteBtnAll = document.querySelector(".cart__delete-btn-all")
 
 
-function updeteCartProd(){
+export function updeteCartProd(){
+    // const countLocalProd = getFromLocalStorage("productsBasket") || [];
     const cartProductItems = cartProductList.querySelectorAll(".cart__product-item");
     let total = 0;
     cartProductItems.forEach( cartProdItem => {
@@ -102,13 +103,33 @@ function updeteCartProd(){
         const price = parseFloat(cartProdPrice.replace('$', ''));
         const quantity = parseInt(cartProductPlusText);
         total += price * quantity
+
+
     });
 
     cartOrderPrice.textContent = `$${total.toFixed(2)}`
-    const countNumHead = cartProductItems.length;
-    cartTitle.textContent = `CART(${countNumHead})`
-    headerText.textContent = `CART(${countNumHead})`
+    // const countNumHead = cartProductItems.length;
+    // cartTitle.textContent = `CART(${countNumHead})`
+    // headerText.textContent = `CART(${countNumHead})`
 
+
+    // const countLocalLeng = countLocalProd.length
+    let countLocalLeng = 0;
+
+    const countLocalProd = getFromLocalStorage("productsBasket");
+
+    if (Array.isArray(countLocalProd)) {
+        countLocalLeng = countLocalProd.length;
+    } else {
+        countLocalLeng = 0;
+    }
+
+    cartTitle.textContent = `CART(${countLocalLeng})`
+    headerText.textContent = `CART(${countLocalLeng})`
+
+    // // const countLocalLeng = countLocalProd.length
+
+    
 }
 
 // getProducts().then((products) => {
