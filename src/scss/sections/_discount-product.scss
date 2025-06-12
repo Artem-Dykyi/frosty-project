@@ -1,4 +1,6 @@
-
+.discount_products{
+    margin-left: 10px;
+}
 
 
 .discount_main-title{
@@ -16,7 +18,7 @@ font-size: 29px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 15px;
-text-align: left;
+text-align: center;
 padding-right: 20px;
     }
 }
@@ -53,13 +55,12 @@ width: 295px;
 height: 232px;
 border-radius: 10px;
 background: #FAFAFA;
-padding-top: 10px;
 display: flex;
 flex-wrap: wrap;
 gap: 5px;
 flex-direction: column;
-align-content: center;
 transition: all 500ms ease 0s;
+position: relative;
     }
 }
 .discount_item:hover{
@@ -121,8 +122,8 @@ justify-content: center;
 align-items: center;
 transition: all 500ms ease 0s;
     @media screen and (min-width: 1270px) {
-            width: 25px;
-height: 25px;
+            width: 30px;
+height: 30px;
 padding: 5px;
 border-radius: 30px;
 background: #6D8434;
@@ -130,8 +131,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 transition: all 500ms ease 0s;
-margin-top: 180px;
-margin-right: 5px;
+position: absolute;
+top: 180px;
+right: 20px;
     }
 }
 .discount_button:hover{
