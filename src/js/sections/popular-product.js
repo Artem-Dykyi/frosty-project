@@ -1,4 +1,3 @@
-// Получение данных с API и заполнение карточек
 const API_URL = "https://food-boutique.b.goit.study/api/products/popular";
 
 fetch(API_URL)
@@ -17,10 +16,6 @@ fetch(API_URL)
       li.classList.add("popular_item");
 
       li.innerHTML = `
-
-      
-       
-       
       <h3 class="popular_card-title">${product.name}</h3>
        <img src="${product.img}" alt="${product.name}" class="popular_card-img">
       <div class="button-box">       

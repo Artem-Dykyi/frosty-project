@@ -1,6 +1,8 @@
 .popular_products{
     margin-bottom: 15px;
+
     margin-left: 20px;
+
 }
 
 .popular_main-title{
@@ -18,7 +20,7 @@ font-size: 29px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 15px;
-text-align: left;
+text-align: center;
     }
 }
 .popular_list{
@@ -38,12 +40,13 @@ flex-direction: column;
     }
 }
 .popular_item{
-width: 275px;
-height: 98px;
+width: 290px;
+height: 105px;
 border-radius: 10px;
 background: #FAFAFA;
 padding-top: 5px;
 padding-left: 10px;
+
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
