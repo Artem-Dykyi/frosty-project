@@ -111,8 +111,7 @@ transition: all 500ms ease 0s;
 .discount_button-svg:hover{
     fill: #6D8434;
     transition: all 500ms ease 0s;
-    box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
-}
+   }
 .discount_button{
     width: 25px;
 height: 25px;
@@ -140,8 +139,7 @@ right: 20px;
 }
 .discount_button:hover{
     background: #E8E8E2;
-    transition: all 500ms ease 0s;
-    box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+    transition: background-color 500ms ease 0s;
 }
 
 .discount_card-text{

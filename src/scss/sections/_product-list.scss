@@ -23,13 +23,18 @@
         padding: 20px;
         background-color: $background-cards-color;
         border-radius: 20px;
-
+transition: box-shadow 500ms ease 0s;
         @media screen and (min-width: 734px) {
             width: 336px;
         }
 
         @media screen and (min-width: 1270px) {
             width: 295px;
+        }
+        &:hover {
+ box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+
+            transition: box-shadow 500ms ease 0s;
         }
     }
 
@@ -142,12 +147,20 @@
         &--checked {
             background-color: $background-fone-color;
         }
+        &:hover {
+                background: #E8E8E2;
+    transition: background-color 500ms ease 0s;
+
+                    }
     }
 
 
     &__icon {
         fill: $background-fone-color;
         display: block;
+        &:hover {
+            fill: $accent-color;
+        }
     }
 
     &__icon-2 {

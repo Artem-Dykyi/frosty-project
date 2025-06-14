@@ -36,6 +36,11 @@
     }
 }
 
+.header__logo-btn:hover{
+background: #586F1F;
+    transition: background-color 500ms ease 0s;
+}
+
 .header__logo-icon{
     fill: #E8E8E2;
     
@@ -84,7 +89,10 @@
         margin-right: 34px;
     }
 }
-
+.header__btn-home:hover{
+background: #586F1F;
+    transition: background-color 500ms ease 0s;
+}
 .header__link-home{
     color: #E8E8E2;
 }
@@ -105,6 +113,10 @@
     }
 }
 
+.header__btn-cart:hover{
+background: #586F1F;
+    transition: background-color 500ms ease 0s;
+}
 .header__btn-link{
     display: flex;
 
