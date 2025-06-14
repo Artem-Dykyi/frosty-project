@@ -32,7 +32,7 @@ products.map((product)=>
                                     <p class="cart__product-plus-text">1</p>
                                     <button type="button" class="cart__btn-plus">
                                         <svg class="cart__icon-plus" width="20" height="20">
-                                            <use href="#cross"></use>
+                                            <use href="../images/icon.svg#cross"></use>
                                         </svg>
                                     </button>
                                 </div>

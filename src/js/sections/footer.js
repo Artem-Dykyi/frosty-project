@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("subscribeForm");
+  const form = document.querySelector(".footer_subscribe-box");
   const emailInput = document.getElementById("footerSubscribeInput");
   const successModal = document.querySelector(".subscribe_modal-backdrop");
   const errorModal = document.querySelector(".already-sub__modal");
