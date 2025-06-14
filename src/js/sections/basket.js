@@ -8,7 +8,9 @@ import { getFromLocalStorage, setToLocalStorage } from "../additional/localstora
 const renderCart = () => {    
 const cartIds = getFromLocalStorage("productsBasket") || [];
 
+
 getproducts().then((products) => {
+
     const cartItems = products.filter(product => cartIds.includes(product._id));
     document.querySelector(".cart__product-list").innerHTML = creatProducts(cartItems);
 
