@@ -30,6 +30,15 @@
         background-color: #fff;
         border-radius: 50%;
         cursor: pointer;
+
+        &:hover {
+            background-color: $hover-accent-color;
+            transition: 250ms ease-out;
+            & use {
+                stroke: white;
+            }
+        }
+
         @media screen and (max-width: 734px) {
             width: 36px;
             height: 36px;
@@ -42,8 +51,9 @@
         fill: none;
         stroke: $pagination-color;
     }
+
     &__arrow--disabled {
-        & svg{
+        & svg {
             stroke: $pagination-unuseble-color;
         }
     }
@@ -69,7 +79,7 @@
             background-color: $accent-color;
         }
 
-         @media screen and (max-width: 734px) {
+        @media screen and (max-width: 734px) {
             width: 36px;
             height: 36px;
         }
@@ -106,6 +116,15 @@
         background-color: #fff;
         border-radius: 50%;
         cursor: pointer;
+
+        &:hover {
+            background-color: $hover-accent-color;
+            transition: 250ms ease-out;
+            & use {
+                stroke: white;
+            }
+        }
+
         @media screen and (max-width: 734px) {
             width: 36px;
             height: 36px;
