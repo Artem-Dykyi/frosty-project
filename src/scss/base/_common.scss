@@ -39,10 +39,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-
-    @media screen and (min-width: 1270px) {
-        flex-wrap: nowrap;
-    }
 }
 
 .maintop {
@@ -51,4 +47,13 @@ body {
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
+}
+.mainright {
+    @media screen and (min-width: 1270px) {
+        order: 2;
+        
+    }
+    @media screen and (max-width: 1270px) {
+        order: 3;
+    }
 }
