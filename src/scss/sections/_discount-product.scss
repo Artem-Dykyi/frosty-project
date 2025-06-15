@@ -32,13 +32,13 @@ padding-right: 20px;
 
 .discount_list{
     display: flex;
-
+justify-content: center;
 gap: 20px;
 flex-wrap: wrap;
 align-items: center;
 @media screen and (min-width: 768px) {
     display: flex;
-
+justify-content: flex-start;
 gap: 35px;
 flex-wrap: wrap;
 align-items: center;
