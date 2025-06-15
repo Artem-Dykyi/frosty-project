@@ -1,4 +1,8 @@
 .products {
+    @media screen and (max-width:1470px) {
+        order: 1;
+        
+    }
 
     &__list {
         display: flex;

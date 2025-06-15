@@ -1,7 +1,11 @@
 
 
 .discount_products{
-    margin-left: 20px;
+    margin-left: 0;
+    @media screen and (min-width: 768px) {
+        margin-left: 20px;
+        
+    }
 }
 
 
@@ -11,8 +15,9 @@ font-family: "Neue Montreal";
 font-size: 28px;
 font-weight: 500;
 line-height: 0.87; 
+margin-top: 30px;
 margin-bottom: 10px;
-text-align: center;
+text-align: left;
 @media screen and (min-width: 1270px) {
 color: #010101;
 font-family: "Neue Montreal";
@@ -20,17 +25,24 @@ font-size: 29px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 15px;
-text-align: center;
+text-align: left;
 padding-right: 20px;
     }
 }
 
 .discount_list{
     display: flex;
-justify-content: center;
-gap: 15px;
+
+gap: 20px;
 flex-wrap: wrap;
 align-items: center;
+@media screen and (min-width: 768px) {
+    display: flex;
+
+gap: 35px;
+flex-wrap: wrap;
+align-items: center;
+    }
 @media screen and (min-width: 1270px) {
     display: flex;
 justify-content: center;
@@ -41,6 +53,7 @@ align-items: flex-end;
 }
 
 .discount_item{
+    position: relative;
 width: 320px;
 height: 250px;
 border-radius: 10px;
@@ -70,6 +83,34 @@ position: relative;
     transition: all 500ms ease 0s;
 }
 
+.discount__circle{
+        position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3px;
+    right: 10px;
+    background-color: #6D8434;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: auto;
+    z-index: 3;
+
+    @media screen and (min-width: 768px) {
+        top: 3px;
+        right: 10px;
+    }
+    
+    @media screen and (min-width: 1470px) {
+        top: 3px;
+        right: 10px;
+    }
+}
+
+.discount__icon{
+    fill:#FAFAFA ;
+}
 .discount_card-title{
         color: #010101;
 font-family: "Neue Montreal";

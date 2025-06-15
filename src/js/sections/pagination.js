@@ -1,3 +1,5 @@
+import {renderProductsList} from '../markups/make-products-list-markup.js';
+
 const pagRight = document.querySelector('#pagination__right');
 const pagRightTwo = document.querySelector('#pagination__right--two');
 const pagLeft = document.querySelector('#pagination__left');
@@ -39,47 +41,9 @@ async function showPage(api, currentPage) {
   const data = await response.json();
   console.log(data); 
   totalPages = data.totalPages;
-  let markup = '';
 
   const products = data.results || data;
-
-  products.forEach(item => {
-    markup += `
-    <li class="products__item">
-        <div class="products__content">
-          <img
-            class="products__photo"
-            alt=""
-            src="${item.img}"
-          />
-        </div>
-        <div class="products__text">
-          <h2 class="products__name">${item.name}</h2>
-          <ul class="products__datas">
-            <li class="products__data">
-              <p class="products__catag">Category: </p>
-              <p class="products__info">${item.category.replace(/_/g, ' ')}</p>
-            </li>
-            <li class="products__data">
-              <p class="products__catag">Size:</p>
-              <p class="products__info">${item.size}</p>
-            </li>
-            <li class="products__data">
-              <p class="products__catag">Popularity:</p>
-              <p class="products__info">${item.popularity}</p>
-            </li>
-          </ul>
-          <div class="products__down">
-            <p class="products__cost">$${item.price}</p>
-            <button class="products__btn">
-              <svg class="products__icon" width="18" height="18">
-                <use href="../images/icon.svg#basket"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </li>`;
-  });
+   const markup = renderProductsList(products)
 
   if (ProductList) {
     ProductList.innerHTML = markup;
