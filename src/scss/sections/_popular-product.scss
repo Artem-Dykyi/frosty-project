@@ -2,7 +2,12 @@
     margin-bottom: 15px;
 
     margin-left: 20px;
-
+margin-top: 100px;
+@media screen and (min-width: 1270px) {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-top: 0;
+    }
 }
 
 .popular_main-title{
@@ -13,6 +18,15 @@ font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 10px;
 text-align: center;
+@media screen and (min-width: 768px) {
+color: #010101;
+font-family: "Neue Montreal";
+font-size: 28px;
+font-weight: 500;
+line-height: 0.87; 
+margin-bottom: 10px;
+text-align: left;
+    }
 @media screen and (min-width: 1270px) {
 color: #010101;
 font-family: "Neue Montreal";
@@ -25,11 +39,17 @@ text-align: center;
 }
 .popular_list{
     display: flex;
-align-items: сenter;
-justify-content: center;
 gap: 15px;
 flex-wrap: wrap;
 align-items: center;
+justify-content: center;
+@media screen and (min-width: 768px) {
+        display: flex;
+gap: 15px;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-start;
+}
 @media screen and (min-width: 1270px) {
     display: flex;
 align-items: сenter;

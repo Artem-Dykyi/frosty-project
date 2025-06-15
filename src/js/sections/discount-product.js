@@ -18,6 +18,11 @@ fetch(API_URL)
       li.classList.add("discount_item");
 
       li.innerHTML = `
+       <div class="discount__circle">
+          <svg class="discount__icon" width="18" height="18">
+            <use href="#leaf"></use>
+          </svg>
+        </div>
         <img src="${product.img}" alt="${product.name}" class="discount_card-img">
         <h3 class="discount_card-title">${product.name}</h3>
         <p class="discount_card-text">$${product.price}</p>
