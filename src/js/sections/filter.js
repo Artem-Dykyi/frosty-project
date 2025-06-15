@@ -8,11 +8,15 @@ const orderInput = document.querySelector("#filter-order-input")
 const orderFilter = document.querySelector("#order-filter")
 const productList = document.querySelector("#products-list")
 const productNothing = document.querySelector("#products-nothing")
+const productBlocked = document.querySelector("#products-blocked")
+const titleBlocked = document.querySelector("#name-category-blocked")
+
+let categoryId = ""
 
 
 
 nameInput.addEventListener("input", () => {
-    createGet(nameInput.value, categoriesInput.value, orderInput.value)
+    createGet(nameInput.value, categoryId, orderInput.value, e.target.textContent)
 })
 
 
@@ -23,9 +27,9 @@ categoriesInput.addEventListener("focus", () => {
 categoriesFilter.addEventListener("click", (e) => {
     if (e.target.closest(".filter__desc")) {
         categoriesInput.value = e.target.textContent;
+        categoryId = e.target.parentElement.id
         categoriesFilter.style.display = "none";
-        createGet(nameInput.value, categoriesInput.value, orderInput.value)
-
+        createGet(nameInput.value, categoryId, orderInput.value, e.target.textContent)
     }
 });
 
@@ -40,13 +44,15 @@ orderInput.addEventListener("focus", () => {
 })
 
 orderFilter.addEventListener("click", (e) => {
-    if (e.target.closest(".filter__desc")) {
+    if (e.target.closest(".filter__variant")) {
         orderInput.value = e.target.textContent;
-        orderFilter.style.display = "none";
-        createGet(nameInput.value, categoriesInput.value, orderInput.value)
+        categoryId = e.target.parentElement.id
+        categoriesFilter.style.display = "none";
+        createGet(nameInput.value, categoryId, orderInput.value, e.target.textContent)
 
     }
 });
+
 
 orderInput.addEventListener("blur", () => {
     setTimeout(() => {
@@ -55,7 +61,7 @@ orderInput.addEventListener("blur", () => {
 })
 
 
-const createGet = (name, category, order) => {
+const createGet = (name, category, order, blockedCateg) => {
     let orderNew = ""
     let orderValue = ""
     if (order === "A to Z") {
@@ -86,21 +92,29 @@ const createGet = (name, category, order) => {
         orderNew = "byABC"
         orderValue = true
     }
-    if (category === "Show all") {
+    if (category === "Show_all") {
         category = ""
     }
 
-    getFilteredPosts(name, category, orderNew, orderValue).then(
-        (products) => {
-            if (products.results.length === 0) {
-                productNothing.style.display = "flex"
-                console.log("s")
-                productList.innerHTML = ""
-            } else {
-                productNothing.style.display = "none"
-                productList.innerHTML = renderProductsList(products.results)
-            }
+    if (category === "Breads_/_Bakery" || category === "Meat_&_Seafood") {
+        productNothing.style.display = "none"
+        productBlocked.style.display = "flex"
+        titleBlocked.textContent = blockedCateg
+        productList.innerHTML = ""
+    } else {
+        getFilteredPosts(name, category, orderNew, orderValue).then(
+            (products) => {
+                if (products.results.length === 0) {
+                    productNothing.style.display = "flex"
+                    productList.innerHTML = ""
+                } else {
+                    productNothing.style.display = "none"
+                    productList.innerHTML = renderProductsList(products.results)
+                }
 
-        }
-    )
+            }
+        )
+    }
+
+
 }
