@@ -1,4 +1,12 @@
 .pagination {
+    @media screen and (max-width: 1470px) {
+        order: 2;
+        
+    }
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100vw;
 
     padding-top: 40px;
 
@@ -45,6 +53,7 @@
         &:hover {
             background-color: $hover-accent-color;
             transition: 250ms ease-out;
+
             & use {
                 stroke: white;
             }
@@ -131,6 +140,7 @@
         &:hover {
             background-color: $hover-accent-color;
             transition: 250ms ease-out;
+
             & use {
                 stroke: white;
             }
