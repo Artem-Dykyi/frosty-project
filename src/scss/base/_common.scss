@@ -37,12 +37,18 @@ body {
 
 .mainwrapper {
     display: flex;
-    width: 110%;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
 
     @media screen and (min-width: 1270px) {
         flex-wrap: nowrap;
     }
+}
+
+.maintop {
+    display: flex;
+    width: 105%;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
