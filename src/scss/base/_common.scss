@@ -41,8 +41,10 @@ body {
     gap: 5px;
     flex-wrap: wrap;
     justify-content: center;
-
-    @media screen and (min-width: 1270px) {
-        flex-wrap: nowrap;
+}
+.mainright{
+    @media screen and (max-width: 1270px) {
+        order: 3;
+        
     }
 }
