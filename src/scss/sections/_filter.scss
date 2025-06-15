@@ -54,9 +54,14 @@
 
     &__input::placeholder {
         font-size: 14px;
-        line-height: 1.28571;
+        line-height: 1.29;
         font-weight: 400;
         color: $title-color;
+
+        @media screen and (min-width: 734px) {
+            font-size: 18px;
+            line-height: 1.33;
+        }
     }
 
     &__input--checked {
@@ -87,4 +92,49 @@
             top: 16px;
         }
     }
+
+    &__overlay {
+        border-radius: 15px;
+        width: 100%;
+        background-color: $background-cards-color;
+        box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.04), 0 20px 69px 0 rgba(0, 0, 0, 0.07);
+        padding: 14px 20px;
+        position: absolute;
+        left: 0;
+        top: 56px;
+        z-index: 3;
+
+        @media screen and (min-width: 734px) {
+            width: 189px;
+            top: 60px;
+        }
+    }
+
+    #categories-filter {
+        display: none;
+    }
+
+    #order-filter {
+        display: none;
+    }
+
+    &__variants {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        color: $filter-variants-color;
+
+        @media screen and (min-width: 734px) {
+            font-size: 18px;
+            line-height: 1.33;
+        }
+    }
+
+
 }

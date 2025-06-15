@@ -40,15 +40,9 @@ body {
     width: 110%;
     gap: 5px;
     flex-wrap: wrap;
+    justify-content: center;
 
-    @media screen and (max-width: 1470px) {
-        justify-content: center;
-
-    }
-}
-.mainright{
-    @media screen and (max-width: 1470px) {
-        order: 3;
-        
+    @media screen and (min-width: 1270px) {
+        flex-wrap: nowrap;
     }
 }

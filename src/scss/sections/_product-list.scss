@@ -27,7 +27,8 @@
         padding: 20px;
         background-color: $background-cards-color;
         border-radius: 20px;
-transition: box-shadow 500ms ease 0s;
+        transition: box-shadow 500ms ease 0s;
+
         @media screen and (min-width: 734px) {
             width: 336px;
         }
@@ -35,8 +36,9 @@ transition: box-shadow 500ms ease 0s;
         @media screen and (min-width: 1270px) {
             width: 295px;
         }
+
         &:hover {
- box-shadow: -3px 7px 17px -7px rgba(0,0,0,0.75);
+            box-shadow: -3px 7px 17px -7px rgba(0, 0, 0, 0.75);
 
             transition: box-shadow 500ms ease 0s;
         }
@@ -151,17 +153,19 @@ transition: box-shadow 500ms ease 0s;
         &--checked {
             background-color: $background-fone-color;
         }
-        &:hover {
-                background: #E8E8E2;
-    transition: background-color 500ms ease 0s;
 
-                    }
+        &:hover {
+            background: #E8E8E2;
+            transition: background-color 500ms ease 0s;
+
+        }
     }
 
 
     &__icon {
         fill: $background-fone-color;
         display: block;
+
         &:hover {
             fill: $accent-color;
         }
@@ -179,5 +183,56 @@ transition: box-shadow 500ms ease 0s;
 
     &__btn--checked &__icon-2 {
         display: block;
+    }
+
+    &__nothing {
+        display: none;
+        padding: 100px 0 180px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @media screen and (min-width: 734px) {
+            padding: 150px 0 300px;
+        }
+
+        @media screen and (min-width: 1270px) {
+            padding-top: 140px;
+        }
+
+
+        &--title {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.11111;
+            text-align: center;
+            color: $title-color;
+            max-width: 261px;
+            margin-bottom: 14px;
+
+            @media screen and (min-width: 734px) {
+                max-width: 367px;
+                font-size: 20px;
+                line-height: 1.2;
+            }
+        }
+
+        &--active {
+            color: $accent-color;
+        }
+
+        &--text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.29;
+            text-align: center;
+            color: $text-desc-color;
+            max-width: 279px;
+
+            @media screen and (min-width: 734px) {
+                max-width: 371px;
+
+            }
+        }
     }
 }
