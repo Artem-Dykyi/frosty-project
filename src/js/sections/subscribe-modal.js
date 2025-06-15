@@ -10,7 +10,7 @@ footerForm.addEventListener('submit', (e) => {
   const email = emailInput.value.trim();
 
   if (!email) {
-    alert('Please enter a valid email address.');
+    // alert('Please enter a valid email address.');
     return;
   }
 
