@@ -16,7 +16,7 @@ font-size: 28px;
 font-weight: 500;
 line-height: 0.87; 
 margin-bottom: 10px;
-text-align: center;
+text-align: left;
 @media screen and (min-width: 1270px) {
 color: #010101;
 font-family: "Neue Montreal";
@@ -31,13 +31,13 @@ padding-right: 20px;
 
 .discount_list{
     display: flex;
-justify-content: center;
+
 gap: 20px;
 flex-wrap: wrap;
 align-items: center;
 @media screen and (min-width: 768px) {
     display: flex;
-justify-content: center;
+
 gap: 35px;
 flex-wrap: wrap;
 align-items: center;
