@@ -62,7 +62,7 @@ background: #586F1F;
 
 
 .header__btn-home{
-    padding: 10px 20px;
+    padding: 10px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -74,8 +74,15 @@ background: #586F1F;
     font-weight: 500;
     line-height: 24px; /* 133.333% */
 
-    margin-left: 60px;
+    margin-left: 20px;
     margin-right: 6px;
+
+    @media screen and (min-width: 365px) {
+        padding: 10px 20px;
+    
+        margin-left: 60px;
+
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 18px;

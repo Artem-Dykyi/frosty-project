@@ -28,9 +28,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 335px;
+    // width: 335px;
 
     margin-bottom: 20px;
+
+    @media screen and (min-width: 365px) {
+        width: 335px;
+    }
 
     @media screen and (min-width: 768px) {
         line-height: 80px; /* 100% */
@@ -80,13 +84,18 @@
     justify-content: center;
     align-items: center;
     top: 192px;
-    right: 128px;
+    right: 35px;
     background-color: #FDC152;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: auto;
     z-index: 3;
+
+    @media screen and (min-width: 335px) {
+        top: 192px;
+        right: 78px;
+    }
 
     @media screen and (min-width: 768px) {
         top: 238px;
@@ -100,25 +109,32 @@
 }
 
 .hero__icon{
+    position: absolute;
+    top: 0;
+    left: 0;
     // fill: #E8E8E2;
     z-index: 2;
 }
 
 .hero__icon-around{
-    fill: red;
-    stroke-width: 1.5px;
+    
+    stroke-width: 0.1px;
     stroke: #010101;
     z-index: 3;
 }
 
 .hero__photo{
-    width: 335px;
+    width: 300px;
     height: 480px;
     border-radius: 70px;
     // outline: solid red 5px;
     overflow: hidden;
     object-fit: cover;  
 
+    @media screen and (min-width: 365px) {
+        width: 335px;
+        height: 580px;
+    }
     @media screen and (min-width: 768px) {
         
         width: 704px;

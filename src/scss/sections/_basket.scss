@@ -7,7 +7,12 @@
 .cart__wraper-delete{
     display: flex;
     align-items: center;
-    margin-left: 230px;
+    margin-left: 190px;
+
+    @media screen and (min-width: 365px) {
+        margin-left: 230px;
+            
+        }
 
     @media screen and (min-width: 768px) {
     margin-left: 404px;
@@ -130,10 +135,15 @@
 }
 
 .cart__product-wraper{
-    display: flex;
+    display: start;
     gap: 16px;
     // outline: solid greenyellow 2px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 365px) {
+        display: flex;
+        }
+
 
     @media screen and (min-width: 768px) {
     margin-bottom: 44px;
@@ -256,8 +266,13 @@
     border: 1px solid rgba(1, 1, 1, 0.10);
     overflow: hidden;
 
-    margin-left: 88px;
+    margin-left: 44px;
 
+    @media screen and (min-width: 365px) {
+        margin-left: 88px;
+        
+
+    }
     @media screen and (min-width: 768px) {
         margin-left: 197px; 
         gap: 10px;
@@ -333,12 +348,16 @@
 .cart__order-box{
     display: flex;
     align-items: end;
-    width: 335px;
+    width: 300px;
     height: 60px;
     border-radius: 8px;
     background: rgba(109, 132, 52, 0.05);
     margin-bottom: 40px;
     // align-items: center;
+
+    @media screen and (min-width: 365px) {
+        width: 335px;
+    }
 
     @media screen and (min-width: 768px) {
         width: 590px;
@@ -349,16 +368,23 @@
 }
 
 .cart__order-text{
-    margin-right: 161px;
+    margin-right: 100px;
     margin-left: 24px;
     padding-bottom: 14px;
     font-size: 20px;
+
+    @media screen and (min-width: 365px) {
+    margin-right: 161px;
+        
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 18px;
     margin-right: 364px;
         
     }
+
+    
 
 }
 
@@ -378,7 +404,7 @@
 }
 
 .cart__order-btn{
-    padding: 12px 138px;
+    padding: 12px 118px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -392,6 +418,13 @@
     font-weight: 500;
     line-height: 24px;
 
+    @media screen and (min-width: 365px) {
+    padding: 12px 138px;
+        
+
+            
+    }
+
     @media screen and (min-width: 768px) {
     padding: 15px 65px;
     font-size: 20px;
@@ -401,12 +434,18 @@
 }
 
 .cart__order-email{
-    padding: 12px 155px 12px 20px;
+    padding: 12px 115px 12px 20px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
     font-size: 14px;
     border: 1px solid rgba(1, 1, 1, 0.30);
+
+    @media screen and (min-width: 365px) {
+        padding: 12px 155px 12px 20px;
+
+            
+    }
 
     @media screen and (min-width: 768px) {
         padding: 15px 172px 15px 20px;
@@ -473,5 +512,13 @@
     margin-left: auto;
     margin-right: auto;
 
-    width: 387px;
+    width: 300px;
+    @media screen and (min-width: 365px) {
+        width: 335px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        width: 387px;
+        
+    }
 }
