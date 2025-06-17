@@ -16,7 +16,7 @@ let categoryId = ""
 
 
 nameInput.addEventListener("input", () => {
-    createGet(nameInput.value, categoryId, orderInput.value, e.target.textContent)
+    createGet(nameInput.value, categoryId, orderInput.value, nameInput.value)
 })
 
 
@@ -105,9 +105,11 @@ const createGet = (name, category, order, blockedCateg) => {
         getFilteredPosts(name, category, orderNew, orderValue).then(
             (products) => {
                 if (products.results.length === 0) {
+                    productBlocked.style.display = "none"
                     productNothing.style.display = "flex"
                     productList.innerHTML = ""
                 } else {
+                    productBlocked.style.display = "none"
                     productNothing.style.display = "none"
                     productList.innerHTML = renderProductsList(products.results)
                 }
