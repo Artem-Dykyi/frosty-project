@@ -1,0 +1,40 @@
+function t(t,e,r,c){Object.defineProperty(t,e,{get:r,set:c,enumerable:!0,configurable:!0})}var e=globalThis,r={},c={},o=e.parcelRequire332b;null==o&&((o=function(t){if(t in r)return r[t].exports;if(t in c){var e=c[t];delete c[t];var o={id:t,exports:{}};return r[t]=o,e.call(o.exports,o,o.exports),o.exports}var a=Error("Cannot find module '"+t+"'");throw a.code="MODULE_NOT_FOUND",a}).register=function(t,e){c[t]=e},e.parcelRequire332b=o);var a=o.register;a("j5vBa",function(t,e){document.addEventListener("DOMContentLoaded",()=>{let t=document.querySelector(".footer_subscribe-box"),e=document.getElementById("footerSubscribeInput"),r=document.querySelector(".subscribe_modal-backdrop"),c=document.querySelector(".already-sub__modal");t.addEventListener("submit",async function(t){if(t.preventDefault(),!e.checkValidity())return void e.reportValidity();let o=e.value.trim();try{let t=await fetch("https://food-boutique.b.goit.study/api/subscription",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:o})}),a=await t.json();t.ok?(e.value="",r.classList.remove("hidden")):(console.log("Error response:",a),c.classList.remove("hidden"))}catch(t){console.log("error:",t),c.classList.remove("hidden")}})})}),a("eOtyb",function(t,e){var r=o("l9cwF");let c=document.querySelector(".header__text"),a=0,s=(0,r.getFromLocalStorage)("productsBasket");a=Array.isArray(s)?s.length:0,c.textContent=`CART(${a})`}),a("l9cwF",function(e,r){t(e.exports,"setToLocalStorage",()=>c),t(e.exports,"getFromLocalStorage",()=>o);let c=(t,e)=>{let r=JSON.stringify(e);localStorage.setItem(t,r)},o=t=>{if(Object.keys(localStorage).includes(t))return JSON.parse(localStorage.getItem(t))}}),o("j5vBa"),o("eOtyb");const s=t=>t.map(t=>`<li class="cart__product-item" id="${t._id}">
+                        <div class="cart__img-wrap">
+                            <img src="${t.img}" alt="product" class="cart__product-img">
+                        </div>
+                        <div class="cart__product-box">
+                            <h2 class="cart__product-title">${t.name}</h2>
+                            <button type="button" class="cart__delete-btn" data-id="${t._id}">
+                                <svg class="cart__icon-cross-box" width="20" height="20">
+                                    <use href="#cross"></use>
+                                </svg>
+                            </button>
+                            <ul class="cart__product-wraper">
+                                <li class="cart__product-info">
+                                    <p class="cart__product-category">Category:</p>
+                                    <p class="cart__product-fresh">${t.category}</p>
+                                </li>
+                                <li class="cart__product-info">
+                                    <p class="cart__product-category">Size:</p>
+                                    <p class="cart__product-fresh">${t.size}</p>
+                                </li>
+                            </ul>
+                            <div class="cart__product-add-wrap">
+                                <p class="cart__product-price">$${t.price}</p>
+                                <div class="cart__product-plus">
+                                    <button type="button" class="cart__btn-minus">
+                                        <svg class="cart__icon-minus" width="20" height="20">
+                                            <use href="#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <p class="cart__product-plus-text">1</p>
+                                    <button type="button" class="cart__btn-plus">
+                                        <svg class="cart__icon-plus" width="20" height="20">
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>`).join("");var l=o("l9cwF");const d=async()=>{console.log("teona");let t=(0,l.getFromLocalStorage)("productsBasket");if(!t||!Array.isArray(t)||0===t.length)return[];try{let e=t.map(async t=>{let e=await fetch(`https://food-boutique.b.goit.study/api/products/${t}`);return await e.json()});return await Promise.all(e)}catch(t){return console.error(t),[]}};var l=o("l9cwF");const n=()=>{let t=(0,l.getFromLocalStorage)("productsBasket")||[];d().then(e=>{let r=e.filter(e=>t.includes(e._id));document.querySelector(".cart__product-list").innerHTML=s(r),0===t.length?(h.classList.add("hidden"),v.classList.add("hidden"),b.classList.remove("hidden")):(h.classList.remove("hidden"),v.classList.remove("hidden"),b.classList.add("hidden"));let c=document.querySelectorAll(".cart__btn-plus"),o=document.querySelectorAll(".cart__btn-minus");c.forEach(t=>{t.addEventListener("click",()=>{let e=t.closest(".cart__product-item").querySelector(".cart__product-plus-text"),r=parseInt(e.textContent);e.textContent=++r,f()})}),o.forEach(t=>{t.addEventListener("click",()=>{let e=t.closest(".cart__product-item").querySelector(".cart__product-plus-text"),r=parseInt(e.textContent);r>1&&(e.textContent=--r,f())})}),f()})};n();const i=document.querySelector(".cart__title"),u=document.querySelector(".header__text"),_=document.querySelector(".cart__product-list"),p=document.querySelector(".cart__order-price"),m=document.querySelector(".cart__modal-close"),y=document.querySelector(".cart__bacdrop"),g=document.querySelector(".cart__order-btn"),h=document.querySelector(".cart__order"),v=document.querySelector(".cart__wraper-delete"),b=document.querySelector(".cart__emoty"),S=document.querySelector(".cart__delete-btn-all");function f(){let t=_.querySelectorAll(".cart__product-item"),e=0;t.forEach(t=>{let r=t.querySelector(".cart__product-price").textContent,c=t.querySelector(".cart__product-plus-text").textContent,o=parseFloat(r.replace("$","")),a=parseInt(c);e+=o*a}),p.textContent=`$${e.toFixed(2)}`;let r=0,c=(0,l.getFromLocalStorage)("productsBasket");r=Array.isArray(c)?c.length:0,i.textContent=`CART(${r})`,u.textContent=`CART(${r})`}m.addEventListener("click",()=>{y.classList.add("hidden")}),g.addEventListener("click",()=>{document.querySelector(".cart__product-list").innerHTML="",localStorage.removeItem("productsBasket"),h.classList.add("hidden"),v.classList.add("hidden"),b.classList.remove("hidden"),y.classList.remove("hidden"),f()}),document.addEventListener("click",t=>{let e=t.target.closest(".cart__delete-btn");if(e){let t=e.dataset.id,r=((0,l.getFromLocalStorage)("productsBasket")||[]).filter(e=>e!==t);(0,l.setToLocalStorage)("productsBasket",r),n()}}),S.addEventListener("click",()=>{document.querySelector(".cart__product-list").innerHTML="",localStorage.removeItem("productsBasket"),h.classList.add("hidden"),v.classList.add("hidden"),b.classList.remove("hidden"),f()});
+//# sourceMappingURL=basket-page.c662139d.js.map
