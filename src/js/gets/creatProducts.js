@@ -1,5 +1,5 @@
-export const creatProducts = (products) => 
-products.map((product)=> 
+export const creatProducts = (productsBasket) => 
+productsBasket.map((product)=> 
     `<li class="cart__product-item" id="${product._id}">
                         <div class="cart__img-wrap">
                             <img src="${product.img}" alt="product" class="cart__product-img">

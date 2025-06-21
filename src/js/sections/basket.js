@@ -9,9 +9,9 @@ const renderCart = () => {
 const cartIds = getFromLocalStorage("productsBasket") || [];
 
 
-getproducts().then((products) => {
+getproducts().then((productsBasket) => {
 
-    const cartItems = products.filter(product => cartIds.includes(product._id));
+    const cartItems = productsBasket.filter(product => cartIds.includes(product._id));
     document.querySelector(".cart__product-list").innerHTML = creatProducts(cartItems);
 
     if (cartIds.length === 0) {
